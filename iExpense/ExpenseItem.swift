@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct ExpenseItem {
-    var name: String
-    var type: String
-    var amount: Double
+struct ExpenseItem: Identifiable {
+    let id = UUID()
+    let name: String
+    let type: String
+    let amount: Double
 }
